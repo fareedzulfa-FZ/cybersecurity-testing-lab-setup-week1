@@ -10,7 +10,6 @@ The objective is to create an isolated virtual networking environment that can b
 
 - Oracle VirtualBox
 - Kali Linux
-- 7-Zip
 - Virtual NAT Network
 - NetworkManager
 
@@ -25,19 +24,15 @@ The objective is to create an isolated virtual networking environment that can b
 | Kali Linux IP Address | 10.0.0.2 |
 | Subnet Mask | 255.255.255.0 |
 | Default Gateway | 10.0.0.1 |
-| DNS Server | 8.8.8.8 |
+| DNS Server | 10.0.0.0 |
 
 ## 4. Implementation Steps
 
-### Step 1 – Download and Install 7-Zip
-
-Downloaded and installed 7-Zip to extract the required virtual machine files.
-
-### Step 2 – Download and Install Oracle VirtualBox
+### Step 1 – Download and Install Oracle VirtualBox
 
 Downloaded and installed Oracle VirtualBox to create and manage virtual machines.
 
-### Step 3 – Configure VirtualBox NAT Network
+### Step 2 – Configure VirtualBox NAT Network
 
 Created a custom NAT Network in VirtualBox with the following configuration:
 
@@ -45,11 +40,11 @@ Created a custom NAT Network in VirtualBox with the following configuration:
 - IPv4 Network: 10.0.0.0/24
 - DHCP: Enabled
 
-### Step 4 – Download and Import Kali Linux
+### Step 3 – Download and Import Kali Linux
 
 Downloaded the Kali Linux virtual machine and imported it into Oracle VirtualBox.
 
-### Step 5 – Configure Kali Linux IP Address
+### Step 4 – Configure Kali Linux IP Address
 
 Configured the Kali Linux network interface with a static IPv4 address.
 
@@ -58,7 +53,7 @@ Configured the Kali Linux network interface with a static IPv4 address.
 - Gateway: 10.0.0.1
 - DNS: 10.0.0.1
 
-### Step 6 – Create a Virtual Machine Snapshot
+### Step 5 – Create a Virtual Machine Snapshot
 
 Created a snapshot of the configured Kali Linux virtual machine to preserve the working environment and provide a recovery point.
 
